@@ -11,3 +11,9 @@ function calculateGST(purchaseAmount) {
     var sumTotal = purchaseAmount + gst;
     return sumTotal;
 }
+
+function addDiscount(purchaseAmount, discountPercentage) {
+    var discountAmount = (discountPercentage * purchaseAmount)/100;    
+    var sumTotal = purchaseAmount - discountAmount;
+    return sumTotal;
+}
