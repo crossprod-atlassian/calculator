@@ -17,3 +17,9 @@ function addDiscount(purchaseAmount, discountPercentage) {
     var sumTotal = purchaseAmount - discountAmount;
     return sumTotal;
 }
+
+function calculateDiscountedPrice(totalAmount, discountCoupon) {
+    var discountPercentage = discountCoupon.discountPercentage;
+    var discountAmount = (discountPercentage * totalAmount)/100;
+    return totalAmount - discountAmount;
+}
